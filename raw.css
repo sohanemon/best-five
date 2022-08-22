@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+@layer base {
+}
+@layer components {
+  .btn {
+    @apply bg-blue-900 w-full py-2 mt-4 font-semibold text-white;
+  }
+  .input {
+    @apply w-32 ring-2 ring-white bg-black p-2;
+  }
+}

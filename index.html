@@ -24,22 +24,11 @@
         },
       };
     </script>
-    <style type="text/tailwindcss">
-      @layer base {
-        input {
-          @apply w-32 ring-2 ring-white bg-black;
-        }
-      }
-      @layer components {
-        .btn {
-          @apply bg-blue-900 w-full py-2 mt-4 font-semibold text-white;
-        }
-      }
-    </style>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="text-gray-200">
-    <div
+  <body class="text-gray-400 bg-gray-900">
+    <header
       class="h-[30rem] text-orange-500 grid place-content-center bg-cover bg-[url('./img/stadium.webp')]"
     >
       <div class="absolute bg-black h-[30rem] opacity-75 w-full"></div>
@@ -50,136 +39,17 @@
           Tigers, is administered by the Bangladesh Cricket Board (BCB).
         </p>
       </div>
-    </div>
+    </header>
     <!-- ------------------------ player container ------------------------ -->
     <div class="container mx-auto grid grid-cols-4 gap-5 my-24">
       <!-- all player card -->
       <div class="grid grid-cols-3 col-span-3 gap-5">
         <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
+        <div class="bg-black ring-2 h-min ring-blue-900">
           <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
+          <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
+              <h2 class="text-white text-2xl font-semibold">Sakib Al Hasan</h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -187,80 +57,55 @@
             <button class="btn">Select</button>
           </div>
         </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
-        <!-- single card -->
-        <div class="bg-black ring-2 ring-blue-900">
-          <div><img src="./img/mushfiq.jpg" alt="" /></div>
-          <div class="p-4">
-            <div class="flex flex-col items-center my-4">
-              <h2 class="text-white font-semibold">Sakib Al Hasan</h2>
-              <div class="gray-500">
-                <span>5224 runs</span> - <span>230 wickets</span>
-              </div>
-            </div>
-            <button
-              class="bg-blue-900 w-full py-2 mt-4 font-semibold text-white"
-            >
-              Select
-            </button>
-          </div>
-        </div>
+
         <!-- End of all cards -->
       </div>
       <div class="space-y-5">
-        <div class="bg-black h-96">
+        <div class="bg-black p-6 h-96">
           <h1
-            class="text-2xl font-semibold py-4 decoration-auto underline-offset-8 underline text-white text-center"
+            class="text-2xl font-semibold pb-4 decoration-auto underline-offset-8 underline text-white text-center"
           >
             Selected V
           </h1>
           <ol class="p-4"></ol>
         </div>
         <!-- budget -->
-        <div class="bg-black p-4 text-lg space-y-4">
+        <div class="bg-black p-6 text-lg space-y-4">
           <h1
-            class="text-2xl font-semibold py-4 decoration-auto underline-offset-8 underline text-white text-center"
+            class="text-2xl font-semibold pb-4 decoration-auto underline-offset-8 underline text-white text-center"
           >
             Budget
           </h1>
           <div class="flex justify-between">
             <span>Per Player</span>
-            <input type="text" />
+            <input class="input" type="text" value="5000" />
           </div>
-          <button>Calculate</button>
+          <button class="btn">Calculate</button>
           <div class="flex justify-between">
             <span>Player Expenses</span>
             <span>$5000</span>
           </div>
           <div class="flex justify-between">
             <span>Manager</span>
-            <input type="text" />
+            <input class="input" type="text" value="5000" />
           </div>
           <div class="flex justify-between">
             <span>Coach</span>
-            <input type="text" />
+            <input class="input" type="text" value="5000" />
           </div>
-          <button>Calculate Total</button>
+          <button class="btn">Calculate Total</button>
+          <div class="flex justify-between font-semibold">
+            <span>Total</span>
+            <span class="text-orange-500">$<span>5000</span> </span>
+          </div>
         </div>
       </div>
     </div>
-
+    <footer class="border-t border-gray-500">
+      <p class="text-base font-medium my-10 text-center text-white">
+        Copyright @ 2022 All Rights Reserved.
+      </p>
+    </footer>
     <script src="./script/app.js"></script>
   </body>
 </html>
