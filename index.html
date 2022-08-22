@@ -24,32 +24,54 @@
         },
       };
     </script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .btn {
+          @apply bg-blue-900 w-full py-2 mt-4 font-semibold text-white hover:ring-2 disabled:bg-gray-400 disabled:ring-0;
+        }
+        .input {
+          @apply w-32 ring-2 ring-white bg-black p-2;
+        }
+      }
+    </style>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="text-gray-400 bg-gray-900">
     <header
-      class="h-[30rem] text-orange-500 grid place-content-center bg-cover bg-[url('./img/stadium.webp')]"
+      class="h-[30rem] text-orange-500 grid place-content-center relative bg-cover bg-[url('./img/stadium.webp')] group overflow-hidden"
     >
       <div class="absolute bg-black h-[30rem] opacity-75 w-full"></div>
-      <div class="text-center w-[80ch] space-y-8 z-20">
+      <div class="text-center w-[80ch] relative space-y-8 z-20">
         <h1 class="font-swash text-7xl">Choose Your Dream V</h1>
+        <img
+          class="absolute -right-10 bottom-14"
+          src="./img/Line Marker.png"
+          alt=""
+        />
         <p class="text-xl text-green-50">
           The Bangladesh men's national cricket team popularly known as The
           Tigers, is administered by the Bangladesh Cricket Board (BCB).
         </p>
       </div>
+      <img
+        class="absolute z-10 bottom-0 -left-16 group-hover:scale-105 group-hover:-rotate-1 transition-all duration-300"
+        src="./img/0318793d5f284aeeb30705b668298b6a-removebg-preview.png"
+        alt=""
+      />
     </header>
     <!-- ------------------------ player container ------------------------ -->
     <div class="container mx-auto grid grid-cols-4 gap-5 my-24">
       <!-- all player card -->
-      <div class="grid grid-cols-3 col-span-3 gap-5">
+      <div id="players" class="grid grid-cols-3 col-span-3 gap-5">
         <!-- single card -->
         <div class="bg-black ring-2 h-min ring-blue-900">
           <div><img src="./img/mushfiq.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Mushfiqur Rahim</h2>
+              <h2 class="name text-white text-2xl font-semibold">
+                Mushfiqur Rahim
+              </h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>0 wickets</span>
               </div>
@@ -61,7 +83,9 @@
           <div><img src="./img/Shakib.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Sakib Al Hasan</h2>
+              <h2 class="name text-white text-2xl font-semibold">
+                Sakib Al Hasan
+              </h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -73,7 +97,7 @@
           <div><img src="./img/Afif.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Afif Hasan</h2>
+              <h2 class="name text-white text-2xl font-semibold">Afif Hasan</h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -85,7 +109,9 @@
           <div><img src="./img/Mahmudullah.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Mahmudullah</h2>
+              <h2 class="name text-white text-2xl font-semibold">
+                Mahmudullah
+              </h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -97,7 +123,7 @@
           <div><img src="./img/mashrafe.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Mashrafe</h2>
+              <h2 class="name text-white text-2xl font-semibold">Mashrafe</h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -109,7 +135,7 @@
           <div><img src="./img/mustafizur.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Mustafizur</h2>
+              <h2 class="name text-white text-2xl font-semibold">Mustafizur</h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -121,7 +147,9 @@
           <div><img src="./img/tamim.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Tamim Iqbal</h2>
+              <h2 class="name text-white text-2xl font-semibold">
+                Tamim Iqbal
+              </h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -133,7 +161,9 @@
           <div><img src="./img/rubel.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Rubel Hossain</h2>
+              <h2 class="name text-white text-2xl font-semibold">
+                Rubel Hossain
+              </h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -145,7 +175,9 @@
           <div><img src="./img/taskin.jpg" alt="" /></div>
           <div class="p-6">
             <div class="flex flex-col items-center my-4">
-              <h2 class="text-white text-2xl font-semibold">Taskin Ahmed</h2>
+              <h2 class="name text-white text-2xl font-semibold">
+                Taskin Ahmed
+              </h2>
               <div class="gray-500">
                 <span>5224 runs</span> - <span>230 wickets</span>
               </div>
@@ -158,41 +190,59 @@
       </div>
       <div class="space-y-5">
         <div class="bg-black p-6 h-96">
-          <h1
-            class="text-2xl font-semibold pb-4 decoration-auto underline-offset-8 underline text-white text-center"
-          >
+          <h1 class="text-2xl font-semibold text-white text-center">
             Selected V
           </h1>
-          <ol class="p-4"></ol>
+          <img class="mx-auto" src="./img/Ureg-Ureg Marker.png" alt="" />
+          <ol
+            id="list"
+            class="p-4 list-decimal space-y-2 font-medium text-lg"
+          ></ol>
         </div>
         <!-- budget -->
         <div class="bg-black p-6 text-lg space-y-4">
-          <h1
-            class="text-2xl font-semibold pb-4 decoration-auto underline-offset-8 underline text-white text-center"
-          >
+          <h1 class="text-2xl font-semibold text-white text-center -mb-4">
             Budget
           </h1>
+          <img class="mx-auto" src="./img/Ureg-Ureg Marker.png" alt="" />
           <div class="flex justify-between">
             <span>Per Player</span>
-            <input class="input" type="text" value="5000" />
+            <input
+              id="per-player-cost"
+              class="input"
+              type="text"
+              placeholder="enter value"
+            />
           </div>
-          <button class="btn">Calculate</button>
+          <button id="sub-calculation" class="btn">Calculate</button>
           <div class="flex justify-between">
             <span>Player Expenses</span>
-            <span>$5000</span>
+            <span>$<span id="player-cost">0</span></span>
           </div>
           <div class="flex justify-between">
             <span>Manager</span>
-            <input class="input" type="text" value="5000" />
+            <input
+              id="manager-cost"
+              class="input"
+              type="text"
+              placeholder="enter value"
+            />
           </div>
           <div class="flex justify-between">
             <span>Coach</span>
-            <input class="input" type="text" value="5000" />
+            <input
+              id="coach-cost"
+              class="input"
+              type="text"
+              placeholder="enter value"
+            />
           </div>
-          <button class="btn">Calculate Total</button>
+          <button id="total-calculation" class="btn">Calculate Total</button>
           <div class="flex justify-between font-semibold">
             <span>Total</span>
-            <span class="text-orange-500">$<span>5000</span> </span>
+            <span class="text-orange-500"
+              >$<span id="total-cost">0</span>
+            </span>
           </div>
         </div>
       </div>
