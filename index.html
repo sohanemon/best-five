@@ -42,10 +42,10 @@
       class="h-[30rem] text-orange-500 grid place-content-center relative bg-cover bg-[url('./img/stadium.webp')] group overflow-hidden"
     >
       <div class="absolute bg-black h-[30rem] opacity-75 w-full"></div>
-      <div class="text-center w-[80ch] relative space-y-8 z-20">
-        <h1 class="font-swash text-7xl">Choose Your Dream V</h1>
+      <div class="text-center w-[30ch] sm:w-[80ch] relative space-y-8 z-20">
+        <h1 class="font-swash text-5xl md:text-7xl">Choose Your Dream V</h1>
         <img
-          class="absolute -right-10 bottom-14"
+          class="absolute -right-10 bottom-14 hidden sm:block"
           src="./img/Line Marker.png"
           alt=""
         />
@@ -61,9 +61,14 @@
       />
     </header>
     <!-- ------------------------ player container ------------------------ -->
-    <div class="container mx-auto grid grid-cols-4 gap-5 my-24">
+    <div
+      class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-24"
+    >
       <!-- all player card -->
-      <div id="players" class="grid grid-cols-3 col-span-3 gap-5">
+      <div
+        id="players"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:col-span-2 lg:col-span-3 gap-5"
+      >
         <!-- single card -->
         <div class="bg-black ring-2 h-min ring-blue-900">
           <div><img src="./img/mushfiq.jpg" alt="" /></div>
